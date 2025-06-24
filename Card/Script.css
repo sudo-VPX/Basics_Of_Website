@@ -1,0 +1,105 @@
+/* 
+
+===================================== Licence Given By VPX - CSS =====================================
+
+
+Licence is Given To - [Your User Name]
+Place Where Code is Used - [Where You Are Using This Code]
+Licence is Given By - VPX
+Any Price For Licence - No
+Permissoin To use File - https://github.com/sudo-VPX/Basics_Of_Website/tree/main/Card/Style.css
+How File Looks or OutPut - https://sudo-VPX.github.io/Basics_Of_Website/Card
+[Why Need Licence - Describe Your Problem , Optional]
+
+Note - the Text With []  is Only Text Can Be Changed or Removed By User who is Using This Code in Licence Only 
+
+Vaid Till - Check Validity on github.com/sudo-VPX under That Go to SECURITY.md section Check There
+To Direct Click Licence then Click To https://github.com/sudo-VPX/Basics_Of_Website/blob/main/SECURITY.md
+
+This File is Made By =======>  Vikrant Pathania or sudo-VPX 
+
+
+
+======================================= Thank You For Your Time ======================================= 
+
+*/
+
+/* ========== Base Reset ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== Variables ========== */
+
+:root {
+    --White_Color: #fff;
+    --Dark_BG: #222222;
+    --FerroFy_Theme: #e0af26;
+}
+
+/* ========== Body ========== */
+
+body.dark-mode .Full_Card {
+    background-color: var(--FerroFy_Theme);
+    color: var(--White_Color);
+}
+
+body.dark-mode .Card_Heading {
+    color: var(--Dark_BG);
+}
+
+
+/* ========== Full Card ========== */
+
+.Full_Card {
+    width: 100vw;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: absolute;
+    background-color: var(--Dark_BG);
+    color: var(--White_Color);
+}
+
+/* ========== Card Heading ========== */
+
+.Card_Heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--FerroFy_Theme);
+}
+
+/* ========== Card HR ========== */
+
+.Card_HR {
+    width: 95%;
+    border: none;
+    border-top: 2px solid currentColor;
+}
+
+/* ========== Card Text ========== */
+
+.Card_Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.7rem;
+}
+
+.Card_Text p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.Card_Text p:last-child {
+    margin-bottom: 30px;
+}
