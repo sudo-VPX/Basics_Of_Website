@@ -1,53 +1,67 @@
+/* ========== Variables ========== */
+:root {
+    --FerroFy_Theme: #e0af26;
+    --White_Color: #fff;
+    --Dark_BG: #222222;
+    --Red_Cross_Color: #ff0000;
+    --Animation_Time_Of_Theme: 0.6s;
+}
+
 /* ========== Base Reset ========== */
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* ========== Body Styles ========== */
 
 body {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    color: white;
-    font-size: 24px;
+    background-color: var(--White_Color);
+    color: var(--White_Color);
+    font-size: 2.5vw;
     transition: background-color 0.3s, color 0.3s;
+    font-family: sans-serif;
 }
 
 body.dark-mode {
-    background-color: #222222;
-    color: white;
+    background-color: var(--Dark_BG);
+    color: var(--White_Color);
 }
 
 body.dark-mode header {
-    background-color: #e0af26;
-    color: #222222;
+    background-color: var(--FerroFy_Theme);
+    color: var(--Dark_BG);
 }
 
 body.dark-mode .Header_Main_Text {
-    color: #222222;
+    color: var(--Dark_BG);
 }
 
 body.dark-mode #Menu_Button {
-    background-color: #222222;
+    background-color: var(--Dark_BG);
+    color: var(--FerroFy_Theme);
+}
+
+body.dark-mode #Menu_Button:hover {
+    background-color: var(--FerroFy_Theme);
+    color: var(--White_Color);
 }
 
 body.dark-mode #Menu {
-    background-color: #222222;
+    background-color: var(--Dark_BG);
 }
 
 /* ========== Theme Toggle ========== */
 
 .Theme_Button {
-    position: fixed;
-    top: 60px;
-    right: 20px;
+    position: absolute;
+    top: 10vh;
+    right: 10px;
+    width: clamp(30px, 10vw, 60px);
+    height: clamp(20px, 5vw, 30px);
     z-index: 1000;
-    width: 60px;
-    height: 34px;
-    margin-top: 10px;
 }
 
 .Theme_Button input {
@@ -63,33 +77,32 @@ body.dark-mode #Menu {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #dfdfdf;
+    background-color: var(--White_Color);
     border-radius: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    transition: 0.4s;
+    font-size: clamp(7px, 1.5vw, 10px);
+    transition: var(--Animation_Time_Of_Theme);
 }
 
 .Theme_Slider:before {
-    content: "🎨";
+    content: " ";
     position: absolute;
-    height: 26px;
-    width: 26px;
+    height: clamp(20px, 3vw, 30px);
+    width: clamp(20px, 3vw, 30px);
     left: 4px;
-    bottom: 4px;
-    background-color: white;
+    background-color: var(--FerroFy_Theme);
     border-radius: 50%;
-    transition: transform 0.4s;
+    transition: transform var(--Animation_Time_Of_Theme);
 }
 
 .Theme_Button input:checked+.Theme_Slider {
-    background-color: #2b2b2b;
+    background-color: var(--Dark_BG);
 }
 
 .Theme_Button input:checked+.Theme_Slider:before {
-    transform: translateX(26px);
+    transform: translateX(clamp(16px, 5vw, 26px));
 }
 
 .Emoji {
@@ -100,54 +113,74 @@ body.dark-mode #Menu {
 /* ========== Header ========== */
 
 header {
-    background-color: #222222;
-    width: 100vw;
+    position: relative;
+    background-color: var(--Dark_BG);
+    width: 100%;
     height: 25vh;
-    text-align: center;
-}
-
-.Header_Main_Text {
-    font-size: 15vh;
-    color: #e0af26;
-    padding-top: 3vh;
-    padding-right: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
 }
 
 /* ========== Logo ========== */
 
+.Logo {
+    position: absolute;
+    top: 50%;
+    left: 0.5vw;
+    transform: translateY(-50%);
+}
+
 .Logo #Logo {
-    float: left;
-    height: 24vh;
-    width: 12vw;
-    padding-top: 0.5vh;
+    width: min(20vh, 1000px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     transition: filter 0.3s;
+}
+
+/* ========== Header Text ========== */
+
+.Header_Main_Text {
+    color: var(--FerroFy_Theme);
+    font-size: clamp(20px, 8vw, 10vh);
+    text-align: center;
 }
 
 /* ========== Menu ========== */
 
 #Menu_Button {
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    background-color: #e0af26;
-    color: white;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    background-color: var(--FerroFy_Theme);
+    color: var(--White_Color);
     border: none;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 0.6em 1.2em;
+    font-size: 2vh;
     cursor: pointer;
+    border-radius: 6px;
+    z-index: 1001;
+}
+
+#Menu_Button:hover {
+    background-color: var(--White_Color);
+    color: var(--FerroFy_Theme);
 }
 
 #Menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
+    width: 100vw;
     height: 100vh;
-    background-color: #e0af26;
-    color: white;
+    background-color: var(--FerroFy_Theme);
+    color: var(--White_Color);
     padding: 20px;
     display: none;
     z-index: 10000;
+    overflow-y: auto;
 }
 
 #Menu_Close_Button {
@@ -155,25 +188,48 @@ header {
     top: 10px;
     right: 10px;
     background-color: red;
-    color: white;
+    color: var(--White_Color);
     border: none;
-    padding: 10px;
-    font-size: 18px;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: clamp(30px, 7.5vw, 50px);
     cursor: pointer;
+}
+
+#Menu_Close_Button:hover {
+    background-color: var(--White_Color);
+    color: var(--Red_Cross_Color);
 }
 
 #Menu_Items {
     list-style-type: none;
     padding: 0;
     margin-top: 40px;
+    font-size: 25px;
 }
 
 #Menu_Items li {
     margin: 10px 0;
+    text-align: center;
 }
 
 #Menu_Items a {
-    color: white;
+    color: var(--White_Color);
     text-decoration: none;
-    font-size: 18px;
+}
+
+/* ========== Responsive Fixes ========== */
+
+@media (max-width: 600px) {
+    .Header_Main_Text {
+        font-size: 8.5vw;
+    }
+
+    .Logo #Logo {
+        width: min(20vw, 750px);
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        transition: filter 0.3s;
+    }
 }
