@@ -1,0 +1,119 @@
+/* ========== Variables ========== */
+
+:root {
+    --FerroFy_Theme: #e0af26;
+    --White_Color: #fff;
+    --Dark_BG: #222222;
+    --Red_Cross_Color: #ff0000;
+    --Animation_Time_Of_Theme: 0.6s;
+}
+
+/* ========== Base Reset ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== Body ========== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+body.dark-mode footer {
+    background-color: var(--FerroFy_Theme);
+    color: var(--Dark_BG);
+}
+
+body.dark-mode .Footer_Sub_Box h2,
+body.dark-mode .Footer_Sub_Box ul li a,
+body.dark-mode .Footer_Bottom {
+    color: var(--Dark_BG);
+    border-color: var(--Dark_BG);
+}
+
+body.dark-mode .Footer_Sub_Box ul li a:hover {
+    color: var(--White_Color);
+}
+
+@media (max-width: 600px) {
+    .Footer_Full_Box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ========== Footer ========== */
+
+footer {
+    background-color: var(--Dark_BG);
+    color: var(--White_Color);
+    padding: 40px 5vw 20px;
+    font-size: clamp(14px, 2vw, 18px);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Footer_Full_Box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ========== Footer Sub Boxes ========== */
+
+.Footer_Sub_Box {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.Footer_Sub_Box h2 {
+    color: var(--FerroFy_Theme);
+    margin-bottom: 15px;
+    font-size: clamp(18px, 2.5vw, 24px);
+    border-bottom: 2px solid var(--FerroFy_Theme);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.Footer_Sub_Box ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.Footer_Sub_Box ul li {
+    margin-bottom: 10px;
+}
+
+.Footer_Sub_Box ul li a {
+    color: var(--White_Color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.Footer_Sub_Box ul li a:hover {
+    color: var(--FerroFy_Theme);
+}
+
+.Footer_Sub_Box p {
+    text-align: center;
+}
+
+.Footer_Bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: clamp(12px, 1.5vw, 16px);
+    color: #ccc;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
