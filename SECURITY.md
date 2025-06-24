@@ -1,6 +1,5 @@
 # Security Of Webapge
 
-- **Version: 0.0.0.1**
 - **Valid Until: 1 Jan 2026**
 
 ---
@@ -23,3 +22,7 @@ Users are permitted to use the code in this repository with the following condit
 - Access and use of the code is permitted **only until till Validity Date** mentioned above.
 
 For more reference and examples, check out the [FerroFy Website](https://github.com/ferrofy/Website/Home).
+
+---
+
+- Last Update - 24 June 25
