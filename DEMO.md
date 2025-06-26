@@ -365,4 +365,4 @@ This File is Made By =======>  Vikrant Pathania or sudo-VPX
 
 # End 
 
-- Thank You , If You Don't Want This Licence Mess In Your Code then Just Invest As Minimal As  ₹ 10 in ``` FerroFy ```
+- Thank You , If You Don't Want This Licence Mess In Your Code then Just Invest As Minimal As  ₹ 10 in ``` FerroFy ``` , For More Plan For Licence Free Code , More Investing Options Check All Plans at [SECURITY.md File](https://github.com/sudo-VPX/Basics_Of_Website/blob/main/SECURITY.md)
