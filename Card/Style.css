@@ -24,6 +24,7 @@ This File is Made By =======>  Vikrant Pathania or sudo-VPX
 
 */
 
+
 /* ========== Base Reset ========== */
 
 * {
@@ -41,6 +42,10 @@ This File is Made By =======>  Vikrant Pathania or sudo-VPX
 
 /* ========== Body ========== */
 
+body {
+    overflow-x: hidden;
+}
+
 body.dark-mode .Full_Card {
     background-color: var(--FerroFy_Theme);
     color: var(--White_Color);
@@ -50,9 +55,15 @@ body.dark-mode .Card_Heading {
     color: var(--Dark_BG);
 }
 
+/* ========== Main ========== */
+/* Next Development*/
+
+/* main {
+    display: flex;
+} */
+
 
 /* ========== Full Card ========== */
-
 .Full_Card {
     width: 100vw;
     border-radius: 12px;
@@ -64,9 +75,11 @@ body.dark-mode .Card_Heading {
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    position: absolute;
+    position: relative;
     background-color: var(--Dark_BG);
     color: var(--White_Color);
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 0;
 }
 
 /* ========== Card Heading ========== */
@@ -102,4 +115,31 @@ body.dark-mode .Card_Heading {
 
 .Card_Text p:last-child {
     margin-bottom: 30px;
+}
+
+/* ========== Card Slides ========== */
+
+.Card_Scroll_Animation_Right_To_Left {
+    transform: translateX(80vw);
+    opacity: 0.25;
+}
+
+.Card_Scroll_Animation_Left_To_Right {
+    transform: translateX(-80vw);
+    opacity: 0.25;
+}
+
+.card-visible {
+    transform: translateX(20);
+    opacity: 1;
+}
+
+.card-exit-left {
+    transform: translateX(-80vw);
+    opacity: 0.25;
+}
+
+.card-exit-right {
+    transform: translateX(80vw);
+    opacity: 0.25;
 }
