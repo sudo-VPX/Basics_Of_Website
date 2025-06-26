@@ -1,6 +1,6 @@
 # Security Of Webapge
 
-- **Valid Until: 1 Jan 2026**
+- **Valid Until: 31 Dec 2025**
 
 ---
 
@@ -54,4 +54,4 @@ For more reference and examples, check out the [DEMO Page](https://github.com/su
 
 ---
 
-- Last Update - 24 June 25
+- Last Update - 26 June 25
