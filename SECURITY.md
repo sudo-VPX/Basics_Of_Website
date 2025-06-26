@@ -50,7 +50,7 @@ Users are permitted to use the code in this repository with the following condit
 
 - Access and use of the code is permitted **only until till Validity Date** mentioned above.
 
-For more reference and examples, check out the [FerroFy Website](https://github.com/ferrofy/Website/Home).
+For more reference and examples, check out the [DEMO Page](https://github.com/sudo-VPX/Basics_Of_Website/blob/main/DEMO.md).
 
 ---
 
