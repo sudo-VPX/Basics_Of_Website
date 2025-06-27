@@ -4,9 +4,9 @@ In This Project Anyone Can Copy The Code , And Use , Modify , Etc With Licence
 
 ## 🚀 Features
 
-- Free For All 
-- Any Ony Can Modify
-- Advance Designs
+- Free For All , For Investor , Non Investor , Any One But Different Conditions
+- Any Ony Can Modify , Update , Change , Suggest , etc The Code For Good
+- Advance and Good Designs
 
 ## How To Get Licence
 

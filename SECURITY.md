@@ -9,8 +9,7 @@ This Respo is Made By [@sudo-VPX](https://github.com/sudo-VPX) a GitHub user.
 To Use Code You Have 2 Options
 
 - Free Licence As Investor
-- Free Licence As Any Human
-
+- Free Licence As Non Investor
 ---
 
 ## Free Licence Policy { Investor }
@@ -37,7 +36,7 @@ Here Is Table With All InvestMent Condition For Free Licence **```For 1 Year```*
 
 To Invest Then Message At - team.ferrofy@gmail.com or On For IG [Click Here](https://www.instagram.com/ferrofy)
 
-## Code Usage Policy { Any Human }
+## Code Usage Policy { Non Investor}
 
 Users are permitted to use the code in this repository with the following conditions:
 
@@ -54,4 +53,6 @@ For more reference and examples, check out the [DEMO Page](https://github.com/su
 
 ---
 
-- Last Update - 26 June 25
+- Last Update - 27 June 25
+- Table , Prices Are Vaild Till - 31 Dec 2025
+- **Note** - Table is Vaild Until 31 Dec 2025 , If You Invest Before The Date then Table Will be Vaild for you till Your 1 Year
