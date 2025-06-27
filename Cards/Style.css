@@ -28,14 +28,6 @@ body.dark-mode .Card_Heading {
     color: var(--Dark_BG);
 }
 
-/* ========== Main ========== */
-/* Next Development*/
-
-/* main {
-    display: flex;
-} */
-
-
 /* ========== Full Card ========== */
 .Full_Card {
     width: 100vw;
@@ -53,6 +45,12 @@ body.dark-mode .Card_Heading {
     color: var(--White_Color);
     transition: transform 0.8s ease, opacity 0.8s ease;
     opacity: 0;
+}
+
+/* ========== Side Cards ========== */
+
+.Card_Sides {
+    display: flex;
 }
 
 /* ========== Card Heading ========== */
