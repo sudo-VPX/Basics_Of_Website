@@ -12,7 +12,7 @@ const Card_8 = document.getElementById("Card_8");
 // ========== Crads Scrolling Animation ==========
 
 function checkScroll() {
-    const triggerBottom = window.innerHeight * 0.8;
+    const triggerBottom = window.innerHeight * 0.75;
 
     const Card_1_Top = Card_1.getBoundingClientRect().top;
     const Card_2_Top = Card_2.getBoundingClientRect().top;
@@ -76,8 +76,6 @@ function checkScroll() {
         Card_4.classList.remove("card-visible", "card-exit-right");
     }
 
-
-
     // ========== Crad 5 Scrolling Animation ==========
 
     if (Card_5_Top < triggerBottom && Card_5_Top > 100) {
@@ -131,6 +129,7 @@ function checkScroll() {
     }
 }
 
+// ========== All Card Scrolling Animation ==========
 
 window.addEventListener("DOMContentLoaded", () => {
     Card_1.classList.add("Card_Scroll_Animation_Right_To_Left");

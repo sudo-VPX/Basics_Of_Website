@@ -1,4 +1,5 @@
-// === Element References ===
+// ========== lement References ==========
+
 const menuBtn = document.getElementById("Menu_Button");
 const menu = document.getElementById("Menu");
 const closeBtn = document.getElementById("Menu_Close_Button");
@@ -8,7 +9,8 @@ const toggle = document.getElementById("Change_Theme");
 const icon = document.getElementById("Theme_Emoji");
 const logo = document.getElementById("Logo");
 
-// === Navigation Links ===
+// ========== Navigation Links ==========
+
 const links = [
     { text: "Home", href: "#home" },
     { text: "About", href: "#about" },
@@ -25,7 +27,8 @@ links.forEach(link => {
     menuItems.appendChild(listItem);
 });
 
-// === Menu Toggle Handlers ===
+// ========== Menu Toggle Handlers ==========
+
 menuBtn.addEventListener("click", () => {
     menu.style.display = "block";
 });
@@ -34,7 +37,8 @@ closeBtn.addEventListener("click", () => {
     menu.style.display = "none";
 });
 
-// === Theme Toggle Handler ===
+// ========== Theme Toggle Handler ==========
+
 toggle.addEventListener("change", () => {
     document.body.classList.toggle("dark-mode");
     icon.textContent = toggle.checked ? " " : " ";

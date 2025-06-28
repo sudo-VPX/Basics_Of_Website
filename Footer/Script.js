@@ -1,14 +1,15 @@
+// ========== Quick Links Data ==========
+
+const quickLinksData = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Contact", href: "#contact" }
+];
+
+// ========== Quick Links JS ==========
+
 document.addEventListener("DOMContentLoaded", () => {
-    const isDarkMode = document.body.classList.contains("dark-mode");
-    console.log(`Dark Mode: ${isDarkMode}`);
-
-    const quickLinksData = [
-        { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
-        { name: "Services", href: "#services" },
-        { name: "Contact", href: "#contact" }
-    ];
-
     const quickLinksSection = document.createElement("div");
     quickLinksSection.classList.add("Footer_Sub_Box", "QuickLinks");
 
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     heading.textContent = "Quick Links";
 
     const list = document.createElement("ul");
+
     quickLinksData.forEach(link => {
         const li = document.createElement("li");
         const a = document.createElement("a");
@@ -29,5 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
     quickLinksSection.appendChild(list);
 
     const placeholder = document.getElementById("QuickLinks");
-    placeholder.replaceWith(quickLinksSection);
+    if (placeholder) {
+        placeholder.replaceWith(quickLinksSection);
+    } else {
+        console.error("Element with id 'QuickLinks' not found.");
+    }
 });

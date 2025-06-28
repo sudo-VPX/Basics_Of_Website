@@ -1,7 +1,6 @@
 /* ========== Variables ========== */
 :root {
     --FerroFy_Theme: #e0af26;
-    --White_Color: #fff;
     --Dark_BG: #222222;
     --Red_Cross_Color: #ff0000;
     --Animation_Time_Of_Theme: 0.6s;
@@ -18,8 +17,6 @@
 /* ========== Body Styles ========== */
 
 body {
-    background-color: var(--White_Color);
-    color: var(--White_Color);
     font-size: 2.5vw;
     transition: background-color 0.3s, color 0.3s;
     font-family: sans-serif;
@@ -27,7 +24,7 @@ body {
 
 body.dark-mode {
     background-color: var(--Dark_BG);
-    color: var(--White_Color);
+    color: #fff;
 }
 
 body.dark-mode header {
@@ -46,7 +43,7 @@ body.dark-mode #Menu_Button {
 
 body.dark-mode #Menu_Button:hover {
     background-color: var(--FerroFy_Theme);
-    color: var(--White_Color);
+    color: #fff;
 }
 
 body.dark-mode #Menu {
@@ -77,7 +74,7 @@ body.dark-mode #Menu {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--White_Color);
+    background-color: #fff;
     border-radius: 34px;
     display: flex;
     align-items: center;
@@ -103,11 +100,6 @@ body.dark-mode #Menu {
 
 .Theme_Button input:checked+.Theme_Slider:before {
     transform: translateX(clamp(16px, 5vw, 26px));
-}
-
-.Emoji {
-    z-index: 1;
-    pointer-events: none;
 }
 
 /* ========== Header ========== */
@@ -138,6 +130,7 @@ header {
     aspect-ratio: 1 / 1;
     object-fit: contain;
     transition: filter 0.3s;
+    color: #fff;
 }
 
 /* ========== Header Text ========== */
@@ -155,7 +148,7 @@ header {
     top: 1vh;
     right: 1vw;
     background-color: var(--FerroFy_Theme);
-    color: var(--White_Color);
+    color: #fff;
     border: none;
     padding: 0.6em 1.2em;
     font-size: 2vh;
@@ -165,7 +158,7 @@ header {
 }
 
 #Menu_Button:hover {
-    background-color: var(--White_Color);
+    background-color: #fff;
     color: var(--FerroFy_Theme);
 }
 
@@ -176,7 +169,7 @@ header {
     width: 100vw;
     height: 100vh;
     background-color: var(--FerroFy_Theme);
-    color: var(--White_Color);
+    color: #fff;
     padding: 20px;
     display: none;
     z-index: 10000;
@@ -188,7 +181,7 @@ header {
     top: 10px;
     right: 10px;
     background-color: red;
-    color: var(--White_Color);
+    color: #fff;
     border: none;
     border-radius: 20px;
     padding: 8px;
@@ -197,7 +190,7 @@ header {
 }
 
 #Menu_Close_Button:hover {
-    background-color: var(--White_Color);
+    background-color: #fff;
     color: var(--Red_Cross_Color);
 }
 
@@ -214,7 +207,7 @@ header {
 }
 
 #Menu_Items a {
-    color: var(--White_Color);
+    color: #fff;
     text-decoration: none;
 }
 
