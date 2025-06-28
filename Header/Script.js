@@ -1,46 +1,48 @@
 // ========== lement References ==========
 
-const menuBtn = document.getElementById("Menu_Button");
-const menu = document.getElementById("Menu");
-const closeBtn = document.getElementById("Menu_Close_Button");
-const menuItems = document.getElementById("Menu_Items");
+document.addEventListener("DOMContentLoaded", () => {
 
-const toggle = document.getElementById("Change_Theme");
-const icon = document.getElementById("Theme_Emoji");
-const logo = document.getElementById("Logo");
+    const menuBtn = document.getElementById("Menu_Button");
+    const menu = document.getElementById("Menu");
+    const closeBtn = document.getElementById("Menu_Close_Button");
+    const menuItems = document.getElementById("Menu_Items");
 
-// ========== Navigation Links ==========
+    const toggle = document.getElementById("Change_Theme");
+    const logo = document.getElementById("Logo");
 
-const links = [
-    { text: "Home", href: "#home" },
-    { text: "About", href: "#about" },
-    { text: "Services", href: "#services" },
-    { text: "Contact", href: "#contact" }
-];
+    // ========== Navigation Links ==========
 
-links.forEach(link => {
-    const listItem = document.createElement("li");
-    const anchor = document.createElement("a");
-    anchor.href = link.href;
-    anchor.textContent = link.text;
-    listItem.appendChild(anchor);
-    menuItems.appendChild(listItem);
-});
+    const links = [
+        { text: "Home", href: "#home" },
+        { text: "About", href: "#about" },
+        { text: "Services", href: "#services" },
+        { text: "Contact", href: "#contact" }
+    ];
 
-// ========== Menu Toggle Handlers ==========
+    links.forEach(link => {
+        const listItem = document.createElement("li");
+        const anchor = document.createElement("a");
+        anchor.href = link.href;
+        anchor.textContent = link.text;
+        listItem.appendChild(anchor);
+        menuItems.appendChild(listItem);
+    });
 
-menuBtn.addEventListener("click", () => {
-    menu.style.display = "block";
-});
+    // ========== Menu Toggle Handlers ==========
 
-closeBtn.addEventListener("click", () => {
-    menu.style.display = "none";
-});
+    menuBtn.addEventListener("click", () => {
+        menu.style.display = "block";
+    });
 
-// ========== Theme Toggle Handler ==========
+    closeBtn.addEventListener("click", () => {
+        menu.style.display = "none";
+    });
 
-toggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-    icon.textContent = toggle.checked ? " " : " ";
-    logo.src = toggle.checked ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+    // ========== Theme Toggle Handler ==========
+
+    toggle.addEventListener("change", () => {
+        document.body.classList.toggle("dark-mode");
+        logo.src = toggle.checked ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+    });
+
 });
