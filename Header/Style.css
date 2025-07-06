@@ -219,7 +219,7 @@ header {
     }
 
     .Logo #Logo {
-        width: min(20vw, 750px);
+        width: min(15vw, 600px);
         height: auto;
         aspect-ratio: 1 / 1;
         object-fit: contain;

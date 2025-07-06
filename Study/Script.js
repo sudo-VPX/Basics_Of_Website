@@ -3,37 +3,37 @@ const subjects = [
     title: "CSE",
     description: "Explore How To Talk With Machine",
     icon: "💻",
-    link: "/CSE"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/CSE/"
   },
   {
     title: "Math",
     description: "Explore How To Understad Universe",
     icon: "➗",
-    link: "/Math"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Math"
   },
   {
     title: "Physics",
     description: "Explore Laws Of Universe",
     icon: "⚛️",
-    link: "/Physics"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Physics"
   },
   {
     title: "Chemistry",
     description: "Explore How Atoms Behave",
     icon: "🧪",
-    link: "/Chemistry"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Chemistry"
   },
   {
     title: "Biology",
     description: "Explore How Life Works In This Universe",
     icon: "🧬",
-    link: "/Biology"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Biology"
   },
   {
     title: "Books Summary",
     description: "Get Short Notes On Many Books",
     icon: "📚",
-    link: "/Book_Summary"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Book_Summary"
   },
   {
     title: "Other Subjects - Comming Soon",

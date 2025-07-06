@@ -57,22 +57,21 @@ body.dark-mode .Subject_Icon {
     color: #fff;
 }
 
-
 .Subject_Box h2 {
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 3.5vw;
 }
 
 .Subject_Box p {
-    font-size: 0.9rem;
+    font-size: 2vw;
     margin-top: 6px;
 }
 
 /* ========== Subject Box Icon ========== */
 
 .Subject_Icon {
-    width: 60px;
-    height: 60px;
+    width: 12.5vw;
+    height: 12.5vw;
     margin: 0 auto 10px;
     background-color: var(--FerroFy_Theme);
     color: var(--Dark_BG);
@@ -80,7 +79,7 @@ body.dark-mode .Subject_Icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 5.5vw;
     font-weight: bold;
 }
 
