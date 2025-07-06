@@ -3,37 +3,37 @@ const subjects = [
     title: "CSE",
     description: "Explore How To Talk With Machine",
     icon: "💻",
-    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/CSE/"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/CSE/"
   },
   {
     title: "Math",
     description: "Explore How To Understad Universe",
     icon: "➗",
-    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Math"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/Math"
   },
   {
     title: "Physics",
     description: "Explore Laws Of Universe",
     icon: "⚛️",
-    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Physics"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/Physics"
   },
   {
     title: "Chemistry",
     description: "Explore How Atoms Behave",
     icon: "🧪",
-    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Chemistry"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/Chemistry"
   },
   {
     title: "Biology",
     description: "Explore How Life Works In This Universe",
     icon: "🧬",
-    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Biology"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/Biology"
   },
   {
     title: "Books Summary",
     description: "Get Short Notes On Many Books",
     icon: "📚",
-    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study_Section/Book_Summary"
+    link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/Book_Summary"
   },
   {
     title: "Other Subjects - Comming Soon",
