@@ -1,0 +1,92 @@
+/* ========== Variables ========== */
+
+:root{
+    --Dark_BG: #222222;
+    --FerroFy_Theme: #e0af26;
+}
+
+/* ========== Base Reset ========== */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ========== Body Styles ========== */
+
+body.dark-mode .Topic_Box {
+    background-color: var(--Dark_BG);
+    color: #fff;
+}
+
+body.dark-mode .Topic_Box:hover {
+    background-color: var(--FerroFy_Theme);
+    color: var(--Dark_BG);
+}
+
+body.dark-mode .Topic_Icon {
+    background-color: #fff;
+    color: var(--Dark_BG);
+}
+
+/* ========== Study Section Full ========== */
+
+#Study_Section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 5vw;
+}
+
+/* ========== Topic Box ========== */
+
+.Topic_Box {
+    background-color: #f2f2f2;
+    border: 2px solid var(--FerroFy_Theme);
+    padding: 30px 20px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.Topic_Box:hover {
+    transform: translateY(-6px);
+    background-color: var(--FerroFy_Theme);
+    color: #fff;
+}
+
+
+.Topic_Box h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.Topic_Box p {
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+/* ========== Topic Box Icon ========== */
+
+.Topic_Icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-color: var(--FerroFy_Theme);
+    color: var(--Dark_BG);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ========== Comming Soon Study Box ========== */
+
+.Topic_Box.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
