@@ -1,0 +1,202 @@
+/* ========== All Variables ========== */
+
+:root {
+    --FerroFy_Theme: #e0af26;
+    --Light_BG: #ffffff;
+    --Light_Text: #222222;
+    --Card_BG: #f9f9f9;
+    --Card_Hover_BG: #fff7d9;
+    --Price_Color: var(--FerroFy_Theme);
+    --Shadow_Glow: 0 0 8px rgba(224, 175, 38, 0.25);
+    --Transition_Speed: 0.3s;
+}
+
+/* ========== Body Styles ========== */
+
+body {
+    margin: 0;
+    background-color: var(--Light_BG);
+    color: var(--Light_Text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(14px, 2vw, 18px);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+
+body.dark-mode #Full_Shop {
+    background-color: #222222;
+}
+
+body.dark-mode .Product_Box {
+    background-color: var(--FerroFy_Theme);
+    color: #fff;
+}
+
+body.dark-mode .Product_Box:hover {
+    background-color: #37ff00;
+    box-shadow: 0 0 15px #37ff00;
+    color: #222222;
+}
+
+body.dark-mode .Product_Image {
+    background-color: var(--FerroFy_Theme);
+    border-bottom: 2px solid #222222;
+}
+
+body.dark-mode .Product_Price {
+    color: #222222;
+}
+
+body.dark-mode .Product_Reviews {
+    color: #222222;
+}
+
+body.dark-mode .star.filled {
+    color: #222222;
+}
+
+/* ========== Full Shop Container ========== */
+
+#Full_Shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+}
+
+/* ========== Product Box ========== */
+
+.Product_Box {
+    background-color: var(--Card_BG);
+    border-radius: 10px;
+    box-shadow: var(--Shadow_Glow);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: background-color var(--Transition_Speed), box-shadow var(--Transition_Speed);
+    text-decoration: none;
+    color: inherit;
+}
+
+.Product_Box:hover {
+    background-color: var(--Card_Hover_BG);
+    box-shadow: 0 0 15px var(--FerroFy_Theme);
+}
+
+/* ========== Product Image ========== */
+
+.Product_Image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid var(--FerroFy_Theme);
+}
+
+/* ========== Product Price ========== */
+
+.Product_Price {
+    color: var(--Price_Color);
+    font-weight: 700;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    padding: 0.6rem 1rem 0 1rem;
+}
+
+/* ========== Product Name ========== */
+
+.Product_Name {
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    padding: 0.25rem 1rem 0 1rem;
+}
+
+/* ========== Product Description ========== */
+
+.Product_Description {
+    font-weight: 400;
+    font-size: clamp(0.85rem, 1vw, 1rem);
+    padding: 0.25rem 1rem 0.6rem 1rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+/* ========== Product Reviews ========== */
+
+.Product_Reviews {
+    padding: 0 1rem 1rem 1rem;
+    color: #bfa120;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.star {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.star.filled {
+    color: #bfa120;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablet Devices */
+@media (max-width: 900px) {
+    #Full_Shop {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .Product_Box {
+        font-size: 0.95rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 1rem 0.5rem;
+    }
+
+    #Full_Shop {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .Product_Price,
+    .Product_Name,
+    .Product_Description,
+    .Product_Reviews {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .Product_Box {
+        padding: 0.5rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+    .Product_Price {
+        font-size: 1.1rem;
+    }
+
+    .Product_Name {
+        font-size: 1rem;
+    }
+
+    .Product_Description {
+        font-size: 0.85rem;
+    }
+
+    .Product_Reviews {
+        font-size: 1rem;
+    }
+}
