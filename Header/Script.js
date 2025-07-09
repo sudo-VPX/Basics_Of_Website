@@ -74,3 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
         updateThemeColor(isDark);
     });
 });
+
+// ========== Main Entrance Fade Out ==========
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const intro = document.getElementById("Main_Entrance");
+        intro.classList.add("fade-out");
+        setTimeout(() => {
+            intro.remove();
+        }, 1000);
+    }, 3500);
+});
