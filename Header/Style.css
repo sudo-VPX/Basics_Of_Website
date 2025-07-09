@@ -58,7 +58,7 @@ body.dark-mode #Menu {
     right: 10px;
     width: clamp(30px, 10vw, 60px);
     height: clamp(20px, 5vw, 30px);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .Theme_Button input {
@@ -154,7 +154,7 @@ header {
     font-size: 2vh;
     cursor: pointer;
     border-radius: 6px;
-    z-index: 1001;
+    z-index: 2;
 }
 
 #Menu_Button:hover {
@@ -172,7 +172,7 @@ header {
     color: #fff;
     padding: 20px;
     display: none;
-    z-index: 10000;
+    z-index: 3;
     overflow-y: auto;
 }
 
@@ -180,12 +180,12 @@ header {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: red;
+    background-color: var(--Red_Cross_Color);
     color: #fff;
     border: none;
-    border-radius: 20px;
-    padding: 8px;
-    font-size: clamp(30px, 7.5vw, 50px);
+    border-radius: 100%;
+    padding: 1vw;
+    font-size: 3vw;
     cursor: pointer;
 }
 
