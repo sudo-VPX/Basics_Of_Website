@@ -262,22 +262,6 @@ header {
     text-decoration: none;
 }
 
-/* ========== Responsive Fixes ========== */
-
-@media (max-width: 600px) {
-    .Header_Main_Text {
-        font-size: 8.5vw;
-    }
-
-    .Logo #Logo {
-        width: min(15vw, 600px);
-        height: auto;
-        aspect-ratio: 1 / 1;
-        object-fit: contain;
-        transition: filter 0.3s;
-    }
-}
-
 /* =================================================================================| Cards |================================================================================= */
 
 /* ========== Body ========== */
@@ -399,13 +383,6 @@ body.dark-mode .Footer_Bottom {
 
 body.dark-mode .Footer_Sub_Box ul li a:hover {
     color: #fff;
-}
-
-@media (max-width: 600px) {
-    .Footer_Full_Box {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* ========== Footer ========== */

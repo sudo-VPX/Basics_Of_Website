@@ -36,13 +36,6 @@ body.dark-mode .Footer_Sub_Box ul li a:hover {
     color: #fff;
 }
 
-@media (max-width: 600px) {
-    .Footer_Full_Box {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 /* ========== Footer ========== */
 
 footer {
