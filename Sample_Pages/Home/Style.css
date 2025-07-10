@@ -478,6 +478,17 @@ footer {
     padding-top: 10px;
 }
 
+#About_Us_Text {
+    overflow: auto;
+    height: 40vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#About_Us_Text::-webkit-scrollbar {
+    display: none;
+}
+
 /* ========== Footer Sub Boxes ========== */
 
 #Social_Links {
