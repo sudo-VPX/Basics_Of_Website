@@ -35,7 +35,7 @@ body.dark-mode .Subject_Icon {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 30px;
-    padding: 5vw;
+    padding: 20px;
 }
 
 /* ========== Subject Box ========== */
@@ -44,34 +44,34 @@ body.dark-mode .Subject_Icon {
     background-color: #f2f2f2;
     border: 2px solid var(--FerroFy_Theme);
     padding: 30px 20px 20px;
-    border-radius: 16px;
+    border-radius: 10%;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(20, 13, 13, 0.05);
 }
 
 .Subject_Box:hover {
-    transform: translateY(-6px);
+    transform: translateY(-25px);
     background-color: var(--FerroFy_Theme);
     color: #fff;
 }
 
 .Subject_Box h2 {
     margin-top: 10px;
-    font-size: 3.5vw;
+    font-size: 30px;
 }
 
 .Subject_Box p {
-    font-size: 2vw;
-    margin-top: 6px;
+    font-size: 17px;
+    margin-top: 10px;
 }
 
 /* ========== Subject Box Icon ========== */
 
 .Subject_Icon {
-    width: 12.5vw;
-    height: 12.5vw;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 10px;
     background-color: var(--FerroFy_Theme);
     color: var(--Dark_BG);
@@ -79,7 +79,7 @@ body.dark-mode .Subject_Icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5.5vw;
+    font-size: 50px;
     font-weight: bold;
 }
 
