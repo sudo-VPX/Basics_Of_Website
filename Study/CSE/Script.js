@@ -2,14 +2,14 @@ const topics = [
   {
     title: "Topic 1",
     description: "About Topic 1",
-    icon: " ",
-    link: " "
+    icon: "📘",
+    link: "topic1.html"
   },
   {
     title: "Topic 2",
     description: "About Topic 2",
-    icon: " ",
-    link: " "
+    icon: "📗",
+    link: "topic2.html"
   },
   {
     title: "Other Topics - Comming Soon",
@@ -23,10 +23,10 @@ const section = document.getElementById('Study_Section');
 
 topics.forEach(topic => {
   const box = document.createElement('div');
-  box.className = 'Topic_Box';
-  
+  box.className = 'Subject_Box';
+
   box.innerHTML = `
-    <div class="Topic_Icon">${topic.icon}</div>
+    <div class="Subject_Icon">${topic.icon}</div>
     <h2>${topic.title}</h2>
     <p>${topic.description}</p>
   `;
