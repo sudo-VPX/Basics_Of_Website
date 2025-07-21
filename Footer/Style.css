@@ -41,8 +41,8 @@ body.dark-mode .Footer_Sub_Box ul li a:hover {
 footer {
     background-color: var(--Dark_BG);
     color: #fff;
-    padding: 40px 5vw 20px;
-    font-size: clamp(14px, 2vw, 18px);
+    padding: 40px 2vw 20px 2vw;
+    font-size: 17px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -50,8 +50,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 3vw;
-    max-width: 1200px;
+    gap: 1.5vw;
     margin: auto;
 }
 
@@ -66,7 +65,7 @@ footer {
 .Footer_Sub_Box h2 {
     color: var(--FerroFy_Theme);
     margin-bottom: 15px;
-    font-size: clamp(18px, 2.5vw, 24px);
+    font-size: 25px;
     border-bottom: 2px solid var(--FerroFy_Theme);
     padding-bottom: 5px;
     text-align: center;
@@ -100,7 +99,7 @@ footer {
 .Footer_Bottom {
     text-align: center;
     margin-top: 30px;
-    font-size: clamp(12px, 1.5vw, 16px);
+    font-size: 14px;
     color: #fff;
     border-top: 1px solid #555;
     padding-top: 10px;
@@ -108,7 +107,7 @@ footer {
 
 #About_Us_Text {
     overflow: auto;
-    height: 40vh;
+    height: 200px;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -122,4 +121,9 @@ footer {
 #Social_Links {
     text-decoration: none;
     color: #00ff08;
+}
+
+#Social_Links:hover {
+    text-decoration: none;
+    color: var(--FerroFy_Theme);
 }

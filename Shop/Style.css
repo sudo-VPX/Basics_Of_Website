@@ -18,7 +18,7 @@ body {
     background-color: var(--Light_BG);
     color: var(--Light_Text);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: 16px;
     display: flex;
     justify-content: center;
     padding: 2rem 1rem;
@@ -61,11 +61,12 @@ body.dark-mode .star.filled {
 
 #Full_Shop {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
     width: 100%;
     max-width: 1200px;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 /* ========== Product Box ========== */
@@ -92,7 +93,7 @@ body.dark-mode .star.filled {
 
 .Product_Image {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 250px;
     object-fit: contain;
     background-color: #f0f0f0;
     border-bottom: 2px solid var(--FerroFy_Theme);
@@ -103,24 +104,24 @@ body.dark-mode .star.filled {
 .Product_Price {
     color: var(--Price_Color);
     font-weight: 700;
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
-    padding: 0.6rem 1rem 0 1rem;
+    font-size: 20px;
+    padding: 10px 15px 5px 15px;
 }
 
 /* ========== Product Name ========== */
 
 .Product_Name {
     font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-    padding: 0.25rem 1rem 0 1rem;
+    font-size: 18px;
+    padding: 5px 15px 0 15px;
 }
 
 /* ========== Product Description ========== */
 
 .Product_Description {
     font-weight: 400;
-    font-size: clamp(0.85rem, 1vw, 1rem);
-    padding: 0.25rem 1rem 0.6rem 1rem;
+    font-size: 14px;
+    padding: 5px 15px 15px 15px;
     color: #555;
     flex-grow: 1;
 }
@@ -128,9 +129,9 @@ body.dark-mode .star.filled {
 /* ========== Product Reviews ========== */
 
 .Product_Reviews {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 15px 15px 15px;
     color: #bfa120;
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: 16px;
 }
 
 .star {

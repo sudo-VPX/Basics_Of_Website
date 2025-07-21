@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 1,
             name: "Item",
             price: 12.34,
-            description: "High Quality Decription",
+            description: "High Quality Description",
             image: "../Images/Logo_Yellow.png",
             reviews: 4
         },
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 2,
             name: "Item",
             price: 123.34,
-            description: "High Quality Decription",
+            description: "High Quality Description",
             image: "../Images/Logo_Yellow.png",
             reviews: 3
         },
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 3,
             name: "Item",
             price: 123.4,
-            description: "High Quality Decription",
+            description: "High Quality Description",
             image: "../Images/Logo_Yellow.png",
             reviews: 5
         },
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 4,
             name: "Item",
             price: 125.34,
-            description: "High Quality Decription",
+            description: "High Quality Description",
             image: "../Images/Logo_Yellow.png",
             reviews: 2
         },
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 5,
             name: "Item",
             price: 1274,
-            description: "High Quality Decription",
+            description: "High Quality Description",
             image: "../Images/Logo_Yellow.png",
             reviews: 5
         }

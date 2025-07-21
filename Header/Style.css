@@ -17,7 +17,6 @@
 /* ========== Body Styles ========== */
 
 body {
-  font-size: 2.5vw;
   transition: background-color 0.3s, color 0.3s;
   font-family: sans-serif;
 }
@@ -64,6 +63,7 @@ body.dark-mode #Menu {
   justify-content: center;
   z-index: 1000;
   transition: opacity 1s ease-out;
+  cursor: none;
 }
 
 /* ========== Main Entrance Out ========== */
@@ -83,8 +83,8 @@ body.dark-mode #Menu {
 }
 
 #Intro_Logo img {
-  height: 10vw;
-  width: 10vw;
+  height: 12.5vw;
+  width: 12.5vw;
 }
 
 /* ========== Main Entrance Animation ========== */
@@ -104,8 +104,8 @@ body.dark-mode #Menu {
   position: absolute;
   top: 10vh;
   right: 10px;
-  width: clamp(30px, 10vw, 60px);
-  height: clamp(20px, 5vw, 30px);
+  width: 60px;
+  height: 30px;
   z-index: 1;
 }
 
@@ -127,15 +127,15 @@ body.dark-mode #Menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(7px, 1.5vw, 10px);
+  font-size: 10px;
   transition: var(--Animation_Time_Of_Theme);
 }
 
 .Theme_Slider:before {
   content: " ";
   position: absolute;
-  height: clamp(20px, 3vw, 30px);
-  width: clamp(20px, 3vw, 30px);
+  height: 30px;
+  width: 30px;
   left: 4px;
   background-color: var(--FerroFy_Theme);
   border-radius: 50%;
@@ -147,7 +147,7 @@ body.dark-mode #Menu {
 }
 
 .Theme_Button input:checked+.Theme_Slider:before {
-  transform: translateX(clamp(16px, 5vw, 26px));
+  transform: translateX(26px);
 }
 
 /* ========== Header ========== */
@@ -156,7 +156,7 @@ header {
   position: relative;
   background-color: var(--Dark_BG);
   width: 100%;
-  height: 22.5vh;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +185,9 @@ header {
 
 .Header_Main_Text {
   color: var(--FerroFy_Theme);
-  font-size: clamp(20px, 8vw, 10vh);
+  font-size: 60px;
+  font-weight: 750;
+  font-family: sans-serif;
   text-align: center;
 }
 
@@ -199,7 +201,7 @@ header {
   color: #fff;
   border: none;
   padding: 0.6em 1.2em;
-  font-size: 2vh;
+  font-size: 3vh;
   cursor: pointer;
   border-radius: 6px;
   z-index: 2;

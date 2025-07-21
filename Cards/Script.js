@@ -12,7 +12,7 @@ const Card_8 = document.getElementById("Card_8");
 // ========== Crads Scrolling Animation ==========
 
 function checkScroll() {
-    const triggerBottom = window.innerHeight * 0.75;
+    const triggerBottom = window.innerHeight * 2;
 
     const Card_1_Top = Card_1.getBoundingClientRect().top;
     const Card_2_Top = Card_2.getBoundingClientRect().top;

@@ -2,6 +2,9 @@
 
 const quickLinksData = [
     { name: "Home", href: "#home" },
+    { name: "Study", href: "#study" },
+    { name: "Shop", href: "#shop" },
+    { name: "All Services", href: "#all_services" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" }
@@ -34,6 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (placeholder) {
         placeholder.replaceWith(quickLinksSection);
     } else {
-        console.error("Element with id 'QuickLinks' not found.");
+        console.error("Little Error For Quick Links , Contact Team For This");
     }
 });
