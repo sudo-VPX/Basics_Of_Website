@@ -83,8 +83,8 @@ body.dark-mode #Menu {
 }
 
 #Intro_Logo img {
-  height: 12.5vw;
-  width: 12.5vw;
+  height: 15vw;
+  width: 15vw;
 }
 
 /* ========== Main Entrance Animation ========== */
@@ -156,7 +156,7 @@ header {
   position: relative;
   background-color: var(--Dark_BG);
   width: 100%;
-  height: 150px;
+  height: 22.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +185,7 @@ header {
 
 .Header_Main_Text {
   color: var(--FerroFy_Theme);
-  font-size: 60px;
+  font-size: 5vw;
   font-weight: 750;
   font-family: sans-serif;
   text-align: center;
